@@ -235,6 +235,19 @@ git config --global --list
 
 
 
+==>Working repo - work in files save file
+
+==>Staging area - git add . or specfic file git add *.txt extension to move staging area
+
+==>local repo - git commit -m "what u commit hints" 
+
+run git status to verify all 
+
+
+
+
+
+
 
 
 
