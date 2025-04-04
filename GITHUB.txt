@@ -246,6 +246,24 @@ run git status to verify all
 
 
 
+=========================================================================================
+
+How devloper access our local repo 
+
+so we need to move code local repo to remote repo 
+
+how to map local repo to remote 
+
+copy https remote repo URL 
+
+https://github.com/manolearning-devops/mano_devops.git
+
+
+
+git remote add alies name to must be give because every time we could not remember the URL so need to give alies name 
+
+git remote add (aliesname)
+
 
 
 
