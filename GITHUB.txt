@@ -265,7 +265,13 @@ git remote add alies name to must be give because every time we could not rememb
 git remote add (aliesname)
 
 
+move code to local repo to remote repo
 
+git push command we can use
+
+git push (aliesname) mention branch 
+
+===================================================================================
 
 
 
