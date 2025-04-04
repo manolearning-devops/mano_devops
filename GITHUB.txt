@@ -1,0 +1,384 @@
+						GIT and GitHub
+
+
+in a organisation Developer team accessing set of file by all the team member they can update the code 
+
+Source code could not send in  email or message application in organisation 
+
+For that in a organisation we use source code management system (SCM) 
+
+
+SCM 
+
+GitHub
+Gitlab
+Bitbucket 
+
+SVN
+CVS
+TFS
+
+
+in organisation Git hub used as a enterprise edition (paid version)
+
+GHE - Git hub enterprise
+
+once purchase the license name start as ghe.wipro.com
+
+we will be get custom domain name 
+
+				=============================================================
+
+
+Advantages of Custom edition :
+================================
+with in  our company network only we can able to use
+
+
+As a devops engineer our responsible to create repository names 
+
+Repositories nothing but where we can store the source code
+
+in a Source code management we have n number of repositories
+
+
+		========================================================================
+
+To do jobs as a devops engineer
+
+1)create an organisation 
+
+in a organisation only we can repositories 
+
+each business unit have separate organisation 
+Business unit means  - department 
+
+2) create a repository
+3)create a Team (inside org only we can create team)
+manage the user team creation is best 
+
+
+4) add the user to the team 
+
+5) provide the Repo access to the team 
+
+
+		======================================================================================
+
+
+create a organisation
+
+Functional mail/ service ID 
+
+it is never going to expire 
+it is not belonging to any employee 
+
+
+https://github.com/manolearning-devops
+
+
+How organisation URL created
+
+===============================================================================
+
+2) create repositories 
+
+
+https://github.com/manolearning-devops/mano_devops.git
+
+		Organisation name       repository name 
+
+
+===========================================================================
+
+3) create a team 
+
+in organisation we can create the teams 
+
+https://github.com/orgs/manolearning-devops/teams/alpha-team
+
+=============================================================================
+
+4) add user to the team 
+
+
+once add user to the team official mail trigger to the user (activation mail)
+
+once they approve the invite link they can access the organisation files 
+
+
+==================================================================
+
+5)provide repo access to the team 
+Click team 
+
+Add repo by (searching repo name)
+
+
+on Right side we can see write read option 
+
+If giving admin access to the user they can able to add member
+
+
+Write
+Read
+Triage 
+Admin
+Maintain 
+
+
+another option 
+===============
+
+Go to team - choose user on top (1 member selected)
+
+dropdown 
+Change role 
+Remove from team 
+
+change role 
+
+Choose 
+Maintainer
+member
+
+
+change Maintainer they will become as admin 
+
+
+==========================================================================
+
+
+
+						Git commands 
+
+Git Bash
+
+How developer commit code in  repository
+
+IDE integrated development environment 
+
+IDE 
+Eclipse
+MyEclipse
+NetBeans
+Visual studio code
+
+If create local empty repository
+
+git will maintain 3 area
+ 
+
+working area 			Staging area 			local repo
+
+=============			=============			============
+
+
+ 
+
+If we run the Git init commands empty local repository will be created 
+
+
+untracked file or files showing red color is located in the working area
+
+working area another name called untracked files 
+
+working area files still in devlopment mode 
+=================================================================================
+
+
+Files which is availble in staging area devlopmet mode
+
+command to transfer working area to staging area 
+
+command - --> git add 
+
+
+git add .
+
+
+want to move specific file extensions 
+
+git add *.txt
+git add *.java
+git add *.html
+
+if run above command files will transfer to staging area 
+
+
+==========================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=========================================================================================================
+
+Some of the source Git hub impressed
+
+https://github.com/njmadhu1964/Devops-2ye-manoj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
