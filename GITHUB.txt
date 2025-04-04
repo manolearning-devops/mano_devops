@@ -208,6 +208,34 @@ if run above command files will transfer to staging area
 
 ==========================================================================================
 
+if want move files staging area to local repository 
+
+git commit command need to use
+
+command => git commit 
+
+First time we want commit or any command message need to display after commint following command we can use
+
+Git commit -m "saving file"
+
+======================================================================================
+
+move file local repo to github account on internet 
+
+
+git config --global user.name "manoplumber"
+git config --global user.email "manoselvaraj7@gmial.com"
+
+
+after configure above command check configuration is correct 
+
+following command is used
+
+git config --global --list 
+
+
+
+
 
 
 
