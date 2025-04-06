@@ -1,0 +1,431 @@
+									Elastic Compute Cloud
+								=======================================
+
+
+
+
+
+EC2 Basics
+===========
+
+
+
+Elastic compute cloud is your computer or server in cloud  
+
+EC2 provides scalable computing capacity in the aws cloud 
+
+using EC2 instance to launch many or as few virtual server as we need ,
+ configure security , networking & manage storage 
+
+EC2 enables we scale up or down to handle changes in requirement
+
+
+
+Basic computer components                                              EC2 instance components 
+
+Operating system                                                           AMI
+CPU                                                                        Instance type
+Hard drive                                                                 EBS(local storage)
+Network Card                                                               IP Addressing
+Firewall                                                                   Security groups 
+RAM                                                                        RAM
+
+
+
+
+EC2 instance purchase types
+===========================
+
+
+on demand - most expensive and flexible option 
+
+Reserved - allow us to purchase an instance for set of period of time 
+
+spot - aws sells unused instance for short amount of time at lower price like bid price
+
+Dedicated Host - completed physical host or server form for specific customer (single tenant)
+
+
+charges for using EC2 instance (Amount calculated by below options basis)
+
+===============================
+
+Based on the below requirement charges will be applicable
+
+1)purchasing option 
+on demand 
+spot 
+reserved
+on demand 
+
+2)instance family 
+general purpose
+compute optimized
+GPU optimized
+memory optimized
+storage optimized
+
+3) EBS optimized (option for higher iops performance)
+
+4)AMI type (price various on distribution /software packages)
+Linux
+windows 
+
+5)Data transfer 
+
+6)region 
+
+
+
+
+components of  EC2 instance
+
+=======================================================
+
+
+tags 
+AMI
+Instance types and Family
+Key pair 
+network 
+storage 
+
+
+1)Tags 
+
+========
+identification and governance purpose
+
+Tags are metadata that we can assign to EC2 instance or any other AWS resources
+
+tags consists of Key and Value pair 
+
+Key - Environment or owner 
+
+value - Description or label corresponding to that key  
+
+features about the key 
+***********************
+
+organisation - tags helps to categorize the organisation by attributes such as project , environment like that
+
+cost allocation - easy to allocate the cost of the team 
+
+Automation - automate certain action based on their specific tags 
+ 
+search and filters - tags make easy to search , filter and we can create the reports how many instance using by dev team , project team like that 
+
+
+
+2) AMI 
+========
+
+it is preconfigured package that is required to create EC2 instance it includes an operating system 
+software packages and other settings 
+
+AMI is Amazon Machine language is preconfigured machine image that contains the operating system , application server, applications 
+associated configuration required to launch the EC2 instance 
+
+Key Components of AMI
+*********************
+
+operating system - AMI includes OS that the EC2 instance will run
+Application Software - AMI include software and Application installed on the system apache , nginx, MySQL 
+configuration - custom configuration such as firewall settings , user data and network configuration can able to bundle into the AMI
+
+
+Types of AMI's
+***************
+
+Community AMI - AMI shared by other AWS community typically open source software 
+
+Market place AMI - AMI available in the AWS market place which include preconfigured software stacks (Eg WordPress , Magento )
+
+Custom AMI - our own create AMIS
+
+quick pick AMI - Amazon instantly we can choose ready to pick (Amazon Linux, ubuntu os )
+
+
+
+
+3)instance Types 
+=================
+
+instance type is basically nothing but CPU 
+
+
+Families
+********
+
+General purpose - (T,M,A)
+
+Compute purpose - 
+
+GPU optimised -
+
+memory optimised -
+
+storage optimised -
+
+
+4) key pair 
+==============
+
+keypair nothing but ssh to the server 
+
+SSH client 
+
+Amazon EC2 port Number 22 SSHD 
+
+Key pair types 
+
+Public key 
+private key 
+
+PEM file we having in local laptop called =  Private Key 
+public key of this private key will be available in user home directory  ( .ssh folder)
+
+
+
+SSH client 
+
+ssh i- <pemfiles>
+username password and ipaddress 
+
+using ssh protocol request go the server port no 22 ssh default gateway 
+once the private key respective to the public key 
+
+server allow shell to connect the server
+
+
+5) Network setting
+==================
+
+VPC nothing but network 
+
+without create VPC also AWS EC2 account have default VPC 
+
+inside VPC default subnet will be available 
+
+Subnet Types
+
+public subnet - subnet which have route , which has connection to the internet 
+
+
+private subnet - subnet which dont connection to the internet
+
+Default subnet have public subnet only 
+
+private subnet only user internally 
+
+user can access only application via load balancer 
+
+load balancer push request to application server , db server via this private subnet
+
+end user cant directly access this private subnet 
+
+subnet can be created multiple availability zone 
+
+one subnet can create one available another can create different availability zone   
+
+
+user can create this subnet may choice public or private 
+
+
+
+6) security Groups 
+
+===================
+
+security group nothing but network firewall 
+
+to control the traffic to EC2 instance 
+
+inbound rules - incoming traffic
+outbound rules - outgoing traffic
+
+even though the network allows communication to server but firewall rules blocking cant communicating the server 
+
+which traffic allowed to resources
+
+Firewall is a network system to prevent unauthorized access from the private network 
+
+security group is virtual firewall that controls the traffic for one or more instance 
+
+
+
+7) configure storage 
+
+=====================
+
+
+Root volume or root storage 
+
+root storage is used for booting the OS
+
+
+in Linux ---> / Forward slash is called the Root storage 
+in windows ---> C: c colon is root storage
+
+
+Instance storage is nothing but temporary storage 
+
+EC2 instance is created on one Hardware server physical server taking storage on same Physical server is called instance storage (Temporary storage)
+
+if start EC2 instance storage will create on Hardware physical server 
+If Stop and again start EC2 instance it may take or create the instance storage from another hardware Physical server
+
+Example : 
+
+Regular using free tier t2.micro
+
+is not instance storage it is EBS Volume only 
+
+it is support EBS volume not instance storage 
+
+configure storage is root only for booting the OS 
+
+
+
+8) Additional Details 
+
+=======================
+
+
+User data 
+
+execute some commands
+
+when creating the server time we can use the user execution commands 
+
+some Automation configuration task 
+
+We can write some script also 
+
+shell scripting  
+
+
+
+it is not manual script AWS will execute the Script so no need to add -y like that 
+
+
+/#!/bin/bash
+yum install nginx -
+
+we can perform some kind of configuration or execution in used data 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
