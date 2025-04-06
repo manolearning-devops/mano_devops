@@ -1,0 +1,75 @@
+
+											:Learning Linux commands 
+
+
+=========================================================
+
+users
+
+ec2-user (Any normal user)
+root
+
+sudo su -       || command to switch user 
+
+Normal user to Root user
+
+From root user enter exit to return back normal ec2-user
+
+
+
+======================================================
+
+uname command 
+
+uname()
+
+information identification of using operating system
+
+
+========================================================
+
+PWD - print working directory
+
+showing the current working page 
+
+============================================================
+
+create new folder in linux
+
+mkdir make directory 
+rmdir Remove directory
+
+rm -rf remove directory forcefully 
+mkdir -v Verbose means print output or flag the message 
+
+
+============================================================
+
+ls command 
+
+list all files 
+
+ls -l provide files with detail long listing 
+
+
+=========================================================
+
+yum command 
+
+yum is packet manager command 
+install package software especially for ret hat Linux os cent , fedora os
+
+yum install tree
+yum update tree
+yum remove tree
+
+========================================================
+
+create files
+
+touch filename.txt
+Eg : touch practise.txt
+
+
+==========================================================
+
