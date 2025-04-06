@@ -216,7 +216,7 @@ private subnet - subnet which dont connection to the internet
 
 Default subnet have public subnet only 
 
-private subnet only user internally 
+private subnet only user internally to communicate server  
 
 user can access only application via load balancer 
 
@@ -272,8 +272,10 @@ Instance storage is nothing but temporary storage
 
 EC2 instance is created on one Hardware server physical server taking storage on same Physical server is called instance storage (Temporary storage)
 
-if start EC2 instance storage will create on Hardware physical server 
-If Stop and again start EC2 instance it may take or create the instance storage from another hardware Physical server
+if start EC2 instance storage will create on Hardware (physical server) 
+
+==>  If Stop and again start EC2 instance it may take or create the instance storage from another hardware Physical server (Temporary Storage)
+
 
 Example : 
 
@@ -283,7 +285,8 @@ is not instance storage it is EBS Volume only
 
 it is support EBS volume not instance storage 
 
-configure storage is root only for booting the OS 
+==>  configure storage is root driectory only for booting the OS 
+
 
 
 
@@ -291,19 +294,14 @@ configure storage is root only for booting the OS
 
 =======================
 
+==> User Data 
 
-User data 
+user data will be executed by AWS so no need to add sudo it will run in root only 
 
-execute some commands
+Software or configuration we can include in user data eg: .net /jenkins like that 
+specific linux commands also we can include Eg:shell script 
 
-when creating the server time we can use the user execution commands 
-
-some Automation configuration task 
-
-We can write some script also 
-
-shell scripting  
-
+when start and stop every time it will not work only one time, when creating the server time we can use the user execution commands 
 
 
 it is not manual script AWS will execute the Script so no need to add -y like that 
@@ -312,8 +310,73 @@ it is not manual script AWS will execute the Script so no need to add -y like th
 /#!/bin/bash
 yum install nginx -
 
-we can perform some kind of configuration or execution in used data 
- 
+
+How to check given task performed or not 
+
+=========================================
+
+==>  ssh to the server check log
+
+open path
+
+var/log/cloud-init-output.log
+
+
+
+
+====================================================================================================================================
+
+
+										IP Address
+Private IP :
+
+=============
+
+By default every EC2 instance will be provided with a private ip address
+
+Private IP addresses allow instances to communicate as long as they are located in the same VPC
+
+
+
+
+Public IP :
+
+============
+
+EC2 instance can be launced with/without public address
+
+Public ip address is required for the instance to communicate  with the internet 
+
+
+
+
+Elastic IP :
+
+============
+
+static public ip for the instance 
+
+chargeable for each elastic IP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
