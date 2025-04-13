@@ -1,8 +1,10 @@
 
-											:Learning Linux commands 
+										Learning Linux commands 
+
 
 
 =========================================================
+
 
 users
 
@@ -25,12 +27,15 @@ uname()
 
 information identification of using operating system
 
+Does we connect to server or not 
+
 
 ========================================================
 
 PWD - print working directory
 
 showing the current working page 
+
 
 ============================================================
 
@@ -63,6 +68,11 @@ yum install tree
 yum update tree
 yum remove tree
 
+
+when ever install any package need to install in admin user only (ie) root user 
+
+Ec2-user no authentication to install any package - Normal user 
+
 ========================================================
 
 create files
@@ -72,4 +82,28 @@ Eg : touch practise.txt
 
 
 ==========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
