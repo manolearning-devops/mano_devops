@@ -196,8 +196,32 @@ command - --> git add
 
 git add .
 
+===>if want to add specific files denotes file name 
+
+eg: git add linux.txt 
+    git add dirname/linux.txt also
+
+
+===>if want to add multiple specfic files 
+
+eg: git add linux.txt github.txt docker.txt
+
+
+===>If want add ignore the error 
+
+git add --ignore-errors .
+
+
+===>If want add all files including the hiodden files
+
+eg: git add -A .
+
+
+
 
 want to move specific file extensions 
+
+
 
 git add *.txt
 git add *.java
