@@ -41,7 +41,16 @@ showing the current working page
 
 create new folder in linux
 
-mkdir make directory 
+
+==>mkdir make directory 
+
+in windows it denotes as folder in linux it is called as directory 
+
+
+
+==>delete directories 
+
+
 rmdir Remove directory
 
 rm -rf remove directory forcefully 
