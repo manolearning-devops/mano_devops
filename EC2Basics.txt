@@ -337,6 +337,14 @@ By default every EC2 instance will be provided with a private ip address
 Private IP addresses allow instances to communicate as long as they are located in the same VPC
 
 
+how to communicate  to the server with private network
+
+site to site to VPN 
+
+client server VPN 
+
+If dont have VPN server we cant connect to the internal server using this private IP
+
 
 
 Public IP :
@@ -357,6 +365,9 @@ Elastic IP :
 static public ip for the instance 
 
 chargeable for each elastic IP
+
+
+
 
 
 
