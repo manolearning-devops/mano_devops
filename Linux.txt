@@ -8,7 +8,8 @@
 
 users
 
-ec2-user (Any normal user)
+ec2-user (Normal user)
+
 root
 
 sudo su -       || command to switch user 
@@ -23,9 +24,11 @@ From root user enter exit to return back normal ec2-user
 
 uname command 
 
-uname()
+uname
 
 information identification of using operating system
+
+Eg: Linux, windows 
 
 Does we connect to server or not 
 
@@ -34,7 +37,8 @@ Does we connect to server or not
 
 PWD - print working directory
 
-showing the current working page 
+showing the current working directory 
+
 
 
 ============================================================
