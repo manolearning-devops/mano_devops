@@ -40,7 +40,6 @@ PWD - print working directory
 showing the current working directory 
 
 
-
 ============================================================
 
 create new folder in linux
@@ -50,15 +49,17 @@ create new folder in linux
 
 in windows it denotes as folder in linux it is called as directory 
 
-
-
-==>delete directories 
-
-
-rmdir Remove directory
-
-rm -rf remove directory forcefully 
+ 
 mkdir -v Verbose means print output or flag the message 
+
+
+
+we can create n  number of directories at once command below
+
+mkdir docker kube8 jenkins enter
+
+
+
 
 
 ============================================================
@@ -95,6 +96,168 @@ Eg : touch practise.txt
 
 
 ==========================================================
+
+connection inactive session 
+
+How to make connection more time aws server
+
+Vi means we are open a file 
+
+vi ~/.ssh/config   -----> comamnd mode
+
+~ represent => user home directory 
+inside that .ssh/config need to create 
+
+
+Host * 
+
+	ServerAliveInterval 30
+	ServerAliveCountMax 2
+
+Make sure Server Alive Interval all are start letter capital case sensitive
+
+
+Press esc button 
+Means it is Exit insert mode to command mode
+
+:wq 
+Means Write and Quit 
+
+=====================================================================================================================
+
+
+Delete Directory 
+
+
+rmdir command
+
+===> rmdir is not able to delete the non empty directories means only empty directory can be deleted by rmdir command 
+
+
+deleting files containing directories followed below 
+
+rm -rf 
+
+rm -rf <directoryname> enter
+
+
+-r means recursive performed in all the sub directories
+-f means forcefully 
+
+
+
+deleting files 
+
+===============
+
+
+rm -f <filename> enter
+
+here we dont need to specify -r bcas it is not directory contains sub directory anything 
+
+files can be directly deleted
+
+
+
+==================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
